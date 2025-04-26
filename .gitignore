@@ -1,0 +1,7 @@
+/.idx
+/.vscode
+/generated/*
+/node_modules/
+/.DS_Store
+.env
+/prisma
