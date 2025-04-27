@@ -1,9 +1,11 @@
 # Toyshop API Documentation
 
 ## Overview
+
 The Toyshop API is a RESTful service designed to manage a toy shop's inventory, orders, and customers. It provides endpoints for creating, reading, updating, and deleting data related to toys, customers, and orders.
 
 ### Features
+
 - Manage toy inventory (CRUD operations)
 - Handle customer information
 - Process orders and track their status
@@ -13,6 +15,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 ## API Endpoints
 
 ### Toys
+
 - **GET /toys**: Retrieve a list of all toys.
 - **GET /toys/{id}**: Retrieve details of a specific toy.
 - **POST /toys**: Add a new toy to the inventory.
@@ -20,6 +23,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 - **DELETE /toys/{id}**: Remove a toy from the inventory.
 
 ### Customers
+
 - **GET /customers**: Retrieve a list of all customers.
 - **GET /customers/{id}**: Retrieve details of a specific customer.
 - **POST /customers**: Add a new customer.
@@ -27,6 +31,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 - **DELETE /customers/{id}**: Remove a customer.
 
 ### Orders
+
 - **GET /orders**: Retrieve a list of all orders.
 - **GET /orders/{id}**: Retrieve details of a specific order.
 - **POST /orders**: Create a new order.
@@ -40,6 +45,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 ### Tables
 
 #### Toys
+
 | Column       | Type        | Description              |
 |--------------|-------------|--------------------------|
 | id           | INT         | Primary key              |
@@ -49,6 +55,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 | description  | TEXT        | Description of the toy   |
 
 #### Customers
+
 | Column       | Type        | Description              |
 |--------------|-------------|--------------------------|
 | id           | INT         | Primary key              |
@@ -58,6 +65,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 | address      | TEXT        | Address of the customer  |
 
 #### Orders
+
 | Column       | Type        | Description              |
 |--------------|-------------|--------------------------|
 | id           | INT         | Primary key              |
@@ -66,6 +74,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 | total_amount | DECIMAL     | Total order amount       |
 
 #### Order_Items
+
 | Column       | Type        | Description              |
 |--------------|-------------|--------------------------|
 | id           | INT         | Primary key              |
@@ -77,6 +86,7 @@ The Toyshop API is a RESTful service designed to manage a toy shop's inventory, 
 ---
 
 ## How to Use
+
 1. Clone the repository.
 2. Set up the database using the schema above.
 3. Run the API server.

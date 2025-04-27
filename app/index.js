@@ -1,18 +1,23 @@
+require('dotenv').config();
 const express = require('express');
-const router = express.Router();
+const router = require('../routes');
+const bodyParser = require('body-parser'); 
 
 const app = express();
 
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Toy Store API');
+  res.redirect('/api');
 }
 );
 
-app.use('/listToys', require('./routes/listToys'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use('/api', router);
 
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-    }  
+  console.log(`Server is running at http://localhost:${port}`);
+}
 );
